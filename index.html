@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <main id="app">
+      <section class="player-container">
+        <h2>Player 1: <span id="p1-token" class="player-token"></span></h2>
+        <section id="p1" class="player-wins"></section>
+      </section>
+      <section class="game">
+        <h1 id="game-status"></h1>
+        <section class="game-board">
+          <div id="0" class="game-board-space"></div>
+          <div id="1" class="game-board-space"></div>
+          <div id="2" class="game-board-space"></div>
+          <div id="3" class="game-board-space"></div>
+          <div id="4" class="game-board-space"></div>
+          <div id="5" class="game-board-space"></div>
+          <div id="6" class="game-board-space"></div>
+          <div id="7" class="game-board-space"></div>
+          <div id="8" class="game-board-space"></div>
+        </section>
+      </section>
+      <section class="player-container">
+        <h2>Player 2: <span id="p2-token" class="player-token"></span></h2>
+        <section id="p2" class="player-wins"></section>
+      </section>
+    </main>
+    <script src="./src/player.js"></script>
+    <script src="./src/game.js"></script>
+    <script src="./src/main.js"></script>
+  </body>
+</html>

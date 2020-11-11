@@ -1,0 +1,87 @@
+* {
+  font-family: "Baloo Bhaina 2", sans-serif;
+}
+
+#app {
+  background: #fff;
+  height: 98.5vh;
+  min-width: 98vw;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+#app .player-container {
+  background: #032536;
+  flex: 2;
+  padding: 1rem;
+  height: 95%;
+  overflow: hidden;
+  padding-bottom: 12rem;
+}
+
+#app .player-container h2 {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+#app .player-token {
+  margin-left: 0.5rem;
+}
+
+#app .player-wins {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+  grid-template-rows: repeat(auto-fit, minmax(200px, 200px));
+  grid-gap: 1rem;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  height: 98%;
+  overflow-y: scroll;
+}
+
+#app .game {
+  background: #827e0e;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 0 3rem;
+}
+
+#app .game-board {
+  background-color: #fff;
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: repeat(3, 250px);
+  grid-template-rows: repeat(3, 250px);
+}
+
+#app .game-board-space {
+  background-color: #919191;
+  color: #fff;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#app #game-status {
+  color: #fff;
+  font-size: 3rem;
+  min-height: 4rem;
+  padding: 0 2rem;
+}
+
+#app .win-card {
+  background-color: #fff;
+  border: 2px solid #454545;
+  border-radius: 0.25rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  height: 100px;
+  padding: 2rem;
+  width: 100px;
+}
